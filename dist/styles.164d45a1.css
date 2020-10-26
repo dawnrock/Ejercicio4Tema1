@@ -1,0 +1,79 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "card card card card card " "card card card card card";
+}
+.main-container .card {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 30px;
+  border-color: gray;
+  border-top-width: 15px;
+  border-bottom-width: 15px;
+}
+.main-container .card .container-imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-container .card .container-imagen .imagen {
+  width: 300px;
+}
+.main-container .card .texto {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .card .texto .titulo {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 24px;
+}
+.main-container .card .texto .parrafo {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  font-family: "trebuchet MS";
+  font-size: 16px;
+}
+.main-container .card .texto .footer {
+  display: flex;
+  align-self: flex-end;
+  padding: 10px 10px;
+}
+.main-container .card .texto .footer .date {
+  color: darkgreen;
+}
+.main-container .card .container-button {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .card .container-button .button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 24px;
+  background-color: lime;
+  border-color: lightgreen;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 0 lightgreen;
+}
+.main-container .card .container-button .button:hover {
+  background-color: lightgreen;
+}
+.main-container .card .container-button .button:active {
+  background-color: green;
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
